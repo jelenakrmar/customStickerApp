@@ -22,7 +22,6 @@
 		77B6DBA81DED9C8F009749D7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DBA31DED9C8F009749D7 /* star.png */; };
 		77B6DBAA1DED9D32009749D7 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DBA91DED9D32009749D7 /* circle.png */; };
 		77FC74451E01DEB800424F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FC74431E01DEB800424F23 /* Assets.xcassets */; };
-		77FC74461E01DEB800424F23 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FC74441E01DEB800424F23 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,7 +228,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77FC74451E01DEB800424F23 /* Assets.xcassets in Resources */,
-				77FC74461E01DEB800424F23 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
