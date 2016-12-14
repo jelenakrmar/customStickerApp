@@ -5,14 +5,16 @@ In this example I am using **UICollectionViewController with a custom layout**, 
 **To create similar app, just follow these steps:**
 
 * Create iMessage app
-* Subclass UIViewController and add subviews
+* Add new UIViewController to the Storyboard and add subviews to it
   * views, buttons, labels, … (optional)
   * UICollectionView (required)
-* implement UICollectionView dataSource methods:
+  * set UIViewController as dataSource and delegate of the UICollectionView
+* Subclass UIViewController and implement UICollectionView dataSource methods:
   * numberOfSections(in:)
   * collectionView(_:numberOfItemsInSection:)
   * collectionView(_:cellForItemAt:)
-* Subclass UICollectionViewCell and add MSStickerView to it (possible through Storyboard)
+* Add MSStickerView to the UICollectionViewCell (possible through Storyboard)
+* Subclass UICollectionViewCell and add set outlet to MSStickerView
 * Load sticker into MSStickerView in collectionView(_:cellForItemAt:) method
 * Load UIViewController into MessageViewController
 
