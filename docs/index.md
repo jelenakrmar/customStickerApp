@@ -1,5 +1,3 @@
-# Introduction
-
 The code in this repository is a part of short tutorial series, that should explain how to easily create different types of customized iMessage sticker apps.
 
 In this example I am using **UICollectionViewController with a custom layout**, in order to set different size and position of each sticker.
