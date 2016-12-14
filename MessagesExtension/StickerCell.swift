@@ -1,6 +1,6 @@
 //
 //  StickerCell.swift
-//  winterStickers
+//  customStickerApp
 //
 //  Created by Jelena on 11/28/16.
 //  Copyright © 2016 Byteout. All rights reserved.

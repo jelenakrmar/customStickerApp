@@ -1,6 +1,6 @@
 //
 //  StickerLayout.swift
-//  winterStickers
+//  customStickerApp
 //
 //  Created by Jelena on 11/25/16.
 //  Copyright © 2016 Byteout. All rights reserved.

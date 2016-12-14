@@ -18,7 +18,7 @@
                BlueprintIdentifier = "776763651DE84BFF003BF2CA"
                BuildableName = "MessagesExtension.appex"
                BlueprintName = "MessagesExtension"
-               ReferencedContainer = "container:winterStickers.xcodeproj">
+               ReferencedContainer = "container:customStickerApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7767635B1DE84BFF003BF2CA"
-               BuildableName = "winterStickers.app"
-               BlueprintName = "winterStickers"
-               ReferencedContainer = "container:winterStickers.xcodeproj">
+               BuildableName = "customStickerApp.app"
+               BlueprintName = "customStickerApp"
+               ReferencedContainer = "container:customStickerApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
             BlueprintIdentifier = "776763651DE84BFF003BF2CA"
             BuildableName = "MessagesExtension.appex"
             BlueprintName = "MessagesExtension"
-            ReferencedContainer = "container:winterStickers.xcodeproj">
+            ReferencedContainer = "container:customStickerApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7767635B1DE84BFF003BF2CA"
-            BuildableName = "winterStickers.app"
-            BlueprintName = "winterStickers"
-            ReferencedContainer = "container:winterStickers.xcodeproj">
+            BuildableName = "customStickerApp.app"
+            BlueprintName = "customStickerApp"
+            ReferencedContainer = "container:customStickerApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7767635B1DE84BFF003BF2CA"
-            BuildableName = "winterStickers.app"
-            BlueprintName = "winterStickers"
-            ReferencedContainer = "container:winterStickers.xcodeproj">
+            BuildableName = "customStickerApp.app"
+            BlueprintName = "customStickerApp"
+            ReferencedContainer = "container:customStickerApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

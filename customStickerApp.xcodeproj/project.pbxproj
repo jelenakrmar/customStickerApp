@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		771AE4F51DEC994F00C59544 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AE4F41DEC994F00C59544 /* StickerCell.swift */; };
-		776763601DE84BFF003BF2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7767635F1DE84BFF003BF2CA /* Assets.xcassets */; };
 		776763671DE84BFF003BF2CA /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 776763661DE84BFF003BF2CA /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7767636C1DE84BFF003BF2CA /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7767636B1DE84BFF003BF2CA /* Messages.framework */; };
 		7767636F1DE84BFF003BF2CA /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767636E1DE84BFF003BF2CA /* MessagesViewController.swift */; };
@@ -22,6 +21,8 @@
 		77B6DBA71DED9C8F009749D7 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DBA21DED9C8F009749D7 /* square.png */; };
 		77B6DBA81DED9C8F009749D7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DBA31DED9C8F009749D7 /* star.png */; };
 		77B6DBAA1DED9D32009749D7 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DBA91DED9D32009749D7 /* circle.png */; };
+		77FC74451E01DEB800424F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FC74431E01DEB800424F23 /* Assets.xcassets */; };
+		77FC74461E01DEB800424F23 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FC74441E01DEB800424F23 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +51,7 @@
 
 /* Begin PBXFileReference section */
 		771AE4F41DEC994F00C59544 /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
-		7767635C1DE84BFF003BF2CA /* winterStickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winterStickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7767635F1DE84BFF003BF2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		776763611DE84BFF003BF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7767635C1DE84BFF003BF2CA /* customStickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customStickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776763661DE84BFF003BF2CA /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7767636B1DE84BFF003BF2CA /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		7767636E1DE84BFF003BF2CA /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +66,8 @@
 		77B6DBA21DED9C8F009749D7 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square.png; path = stickers/square.png; sourceTree = "<group>"; };
 		77B6DBA31DED9C8F009749D7 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = stickers/star.png; sourceTree = "<group>"; };
 		77B6DBA91DED9D32009749D7 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = stickers/circle.png; sourceTree = "<group>"; };
+		77FC74431E01DEB800424F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = customStickerApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		77FC74441E01DEB800424F23 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = customStickerApp/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,7 @@
 		776763551DE84BFF003BF2CA = {
 			isa = PBXGroup;
 			children = (
-				7767635E1DE84BFF003BF2CA /* winterStickers */,
+				7767635E1DE84BFF003BF2CA /* customStickerApp */,
 				7767636D1DE84BFF003BF2CA /* MessagesExtension */,
 				7767636A1DE84BFF003BF2CA /* Frameworks */,
 				7767635D1DE84BFF003BF2CA /* Products */,
@@ -94,18 +95,19 @@
 		7767635D1DE84BFF003BF2CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7767635C1DE84BFF003BF2CA /* winterStickers.app */,
+				7767635C1DE84BFF003BF2CA /* customStickerApp.app */,
 				776763661DE84BFF003BF2CA /* MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7767635E1DE84BFF003BF2CA /* winterStickers */ = {
+		7767635E1DE84BFF003BF2CA /* customStickerApp */ = {
 			isa = PBXGroup;
 			children = (
-				7767635F1DE84BFF003BF2CA /* Assets.xcassets */,
-				776763611DE84BFF003BF2CA /* Info.plist */,
+				77FC74431E01DEB800424F23 /* Assets.xcassets */,
+				77FC74441E01DEB800424F23 /* Info.plist */,
 			);
+			name = customStickerApp;
 			path = winterStickers;
 			sourceTree = "<group>";
 		};
@@ -148,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7767635B1DE84BFF003BF2CA /* winterStickers */ = {
+		7767635B1DE84BFF003BF2CA /* customStickerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7767637C1DE84BFF003BF2CA /* Build configuration list for PBXNativeTarget "winterStickers" */;
+			buildConfigurationList = 7767637C1DE84BFF003BF2CA /* Build configuration list for PBXNativeTarget "customStickerApp" */;
 			buildPhases = (
 				7767635A1DE84BFF003BF2CA /* Resources */,
 				7767637B1DE84BFF003BF2CA /* Embed App Extensions */,
@@ -160,9 +162,9 @@
 			dependencies = (
 				776763691DE84BFF003BF2CA /* PBXTargetDependency */,
 			);
-			name = winterStickers;
+			name = customStickerApp;
 			productName = winterStickers;
-			productReference = 7767635C1DE84BFF003BF2CA /* winterStickers.app */;
+			productReference = 7767635C1DE84BFF003BF2CA /* customStickerApp.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
 		776763651DE84BFF003BF2CA /* MessagesExtension */ = {
@@ -202,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 776763591DE84BFF003BF2CA /* Build configuration list for PBXProject "winterStickers" */;
+			buildConfigurationList = 776763591DE84BFF003BF2CA /* Build configuration list for PBXProject "customStickerApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7767635B1DE84BFF003BF2CA /* winterStickers */,
+				7767635B1DE84BFF003BF2CA /* customStickerApp */,
 				776763651DE84BFF003BF2CA /* MessagesExtension */,
 			);
 		};
@@ -226,7 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776763601DE84BFF003BF2CA /* Assets.xcassets in Resources */,
+				77FC74451E01DEB800424F23 /* Assets.xcassets in Resources */,
+				77FC74461E01DEB800424F23 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.winterStickers.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.customStickerApp.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -393,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.winterStickers.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.customStickerApp.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -406,8 +409,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = winterStickers/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.winterStickers;
+				INFOPLIST_FILE = customStickerApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.customStickerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -419,8 +422,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = winterStickers/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.winterStickers;
+				INFOPLIST_FILE = customStickerApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteout.customStickerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -429,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		776763591DE84BFF003BF2CA /* Build configuration list for PBXProject "winterStickers" */ = {
+		776763591DE84BFF003BF2CA /* Build configuration list for PBXProject "customStickerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				776763761DE84BFF003BF2CA /* Debug */,
@@ -447,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7767637C1DE84BFF003BF2CA /* Build configuration list for PBXNativeTarget "winterStickers" */ = {
+		7767637C1DE84BFF003BF2CA /* Build configuration list for PBXNativeTarget "customStickerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7767637D1DE84BFF003BF2CA /* Debug */,
