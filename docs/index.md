@@ -4,7 +4,7 @@ The code in this repository is a part of short tutorial series, that should expl
 
 In this example I am using **UICollectionViewController with a custom layout**, in order to set different size and position of each sticker.
 
-## To create similar app, just follow these steps:
+**To create similar app, just follow these steps:**
 
 * Create iMessage app
 * Subclass UIViewController and add subviews
