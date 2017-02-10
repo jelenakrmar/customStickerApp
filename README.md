@@ -5,3 +5,6 @@ This project can be used as a starter kit for creating new iMessage app. You can
 
 For more info, see:
 https://jelenakrmar.github.io/customStickerApp/
+
+This app is a part of the short tutorial on iMessage sticker apps:
+http://www.slideshare.net/JelenaKrmar/different-types-of-sticker-apps-72003132
