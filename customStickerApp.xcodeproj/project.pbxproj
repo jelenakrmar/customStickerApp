@@ -13,7 +13,6 @@
 		7767636F1DE84BFF003BF2CA /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767636E1DE84BFF003BF2CA /* MessagesViewController.swift */; };
 		776763721DE84BFF003BF2CA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776763701DE84BFF003BF2CA /* MainInterface.storyboard */; };
 		776763741DE84BFF003BF2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776763731DE84BFF003BF2CA /* Assets.xcassets */; };
-		776763801DE84CF5003BF2CA /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767637F1DE84CF5003BF2CA /* StickerCollectionViewController.swift */; };
 		7767638F1DE859AB003BF2CA /* StickerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767638E1DE859AB003BF2CA /* StickerLayout.swift */; };
 		77B6DBA41DED9C8F009749D7 /* club.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DB9F1DED9C8F009749D7 /* club.png */; };
 		77B6DBA51DED9C8F009749D7 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B6DBA01DED9C8F009749D7 /* heart.png */; };
@@ -57,7 +56,6 @@
 		776763711DE84BFF003BF2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		776763731DE84BFF003BF2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776763751DE84BFF003BF2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7767637F1DE84CF5003BF2CA /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
 		7767638E1DE859AB003BF2CA /* StickerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerLayout.swift; sourceTree = "<group>"; };
 		77B6DB9F1DED9C8F009749D7 /* club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = club.png; path = stickers/club.png; sourceTree = "<group>"; };
 		77B6DBA01DED9C8F009749D7 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = stickers/heart.png; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			children = (
 				776763811DE85237003BF2CA /* stickers */,
 				7767636E1DE84BFF003BF2CA /* MessagesViewController.swift */,
-				7767637F1DE84CF5003BF2CA /* StickerCollectionViewController.swift */,
 				7767638E1DE859AB003BF2CA /* StickerLayout.swift */,
 				771AE4F41DEC994F00C59544 /* StickerCell.swift */,
 				776763701DE84BFF003BF2CA /* MainInterface.storyboard */,
@@ -190,7 +187,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Byteout;
 				TargetAttributes = {
 					7767635B1DE84BFF003BF2CA = {
@@ -257,7 +254,6 @@
 			files = (
 				7767638F1DE859AB003BF2CA /* StickerLayout.swift in Sources */,
 				771AE4F51DEC994F00C59544 /* StickerCell.swift in Sources */,
-				776763801DE84CF5003BF2CA /* StickerCollectionViewController.swift in Sources */,
 				7767636F1DE84BFF003BF2CA /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +293,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -304,6 +301,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -354,6 +352,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -361,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

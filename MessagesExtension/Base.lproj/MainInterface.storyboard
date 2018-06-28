@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,39 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <rect key="frame" x="116" y="254" width="88.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
-                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
-                        </constraints>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="528"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--Sticker Collection View Controller-->
-        <scene sceneID="7fB-4G-9Gk">
-            <objects>
-                <viewController storyboardIdentifier="StickersViewController" id="4kv-Z2-YwK" customClass="StickerCollectionViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="42x-tG-dIC"/>
-                        <viewControllerLayoutGuide type="bottom" id="UCm-JG-jhO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AFE-sm-Ogy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k2w-Nd-D7q">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="508"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="Lnt-vu-qAl" customClass="StickerLayout" customModule="MessagesExtension" customModuleProvider="target"/>
                                 <cells>
@@ -83,12 +52,12 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="4kv-Z2-YwK" id="dlk-rk-p7m"/>
-                                    <outlet property="delegate" destination="4kv-Z2-YwK" id="tZO-d3-aUZ"/>
+                                    <outlet property="dataSource" destination="ObA-dk-sSI" id="u1V-Nz-fxU"/>
+                                    <outlet property="delegate" destination="ObA-dk-sSI" id="RaT-62-Xqu"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pld-FZ-HzW">
-                                <rect key="frame" x="275" y="627" width="100" height="40"/>
+                                <rect key="frame" x="220" y="488" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.77212611610000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="9A2-hQ-gOV"/>
@@ -99,27 +68,30 @@
                                     <color key="titleColor" red="1" green="1" blue="0.92876674110000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="downloadButtonTouchUpInside:" destination="4kv-Z2-YwK" eventType="touchUpInside" id="jou-wi-dHh"/>
+                                    <action selector="downloadButtonTouchUpInside:" destination="ObA-dk-sSI" eventType="touchUpInside" id="p8D-Cr-pW0"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.92876674107142854" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="k2w-Nd-D7q" firstAttribute="top" secondItem="42x-tG-dIC" secondAttribute="bottom" id="3ah-Dp-LWc"/>
-                            <constraint firstAttribute="trailing" secondItem="pld-FZ-HzW" secondAttribute="trailing" id="5o5-BR-Cke"/>
-                            <constraint firstItem="UCm-JG-jhO" firstAttribute="top" secondItem="k2w-Nd-D7q" secondAttribute="bottom" id="5tT-Ng-uPm"/>
-                            <constraint firstItem="UCm-JG-jhO" firstAttribute="top" secondItem="pld-FZ-HzW" secondAttribute="bottom" id="hTE-dC-GdA"/>
-                            <constraint firstAttribute="trailing" secondItem="k2w-Nd-D7q" secondAttribute="trailing" id="hgD-PB-gCb"/>
-                            <constraint firstItem="k2w-Nd-D7q" firstAttribute="leading" secondItem="AFE-sm-Ogy" secondAttribute="leading" id="oTH-jm-8Mn"/>
+                            <constraint firstAttribute="trailing" secondItem="pld-FZ-HzW" secondAttribute="trailing" id="1t2-zi-D3Q"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="k2w-Nd-D7q" secondAttribute="bottom" id="8US-cc-LVI"/>
+                            <constraint firstItem="k2w-Nd-D7q" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="EQ6-CP-UUS"/>
+                            <constraint firstAttribute="trailing" secondItem="k2w-Nd-D7q" secondAttribute="trailing" id="Fbm-vc-zHU"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="pld-FZ-HzW" secondAttribute="bottom" id="IGV-uC-i8I"/>
+                            <constraint firstItem="k2w-Nd-D7q" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="qoG-7h-oe6"/>
+                            <constraint firstAttribute="trailing" secondItem="pld-FZ-HzW" secondAttribute="trailing" id="ruj-m7-oeg"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
                     <connections>
-                        <outlet property="collectionView" destination="k2w-Nd-D7q" id="AEt-Ya-L29"/>
+                        <outlet property="collectionView" destination="k2w-Nd-D7q" id="th2-f6-fbe"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kDe-iU-u58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765.60000000000002" y="148.87556221889056"/>
+            <point key="canvasLocation" x="-88" y="123.23838080959521"/>
         </scene>
     </scenes>
 </document>

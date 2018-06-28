@@ -9,77 +9,87 @@
 import UIKit
 import Messages
 
-class MessagesViewController: MSMessagesAppViewController {
+class MessagesViewController: MSMessagesAppViewController, UICollectionViewDataSource {
+    
     // MARK: Constants
-    private let StickersViewController = "StickersViewController"
+    
+    // Sticker Cell Identifier
+    private let reuseIdentifier = "StickerCell"
+    
+    // Early App Store ID
+    private let appStoreAppID = "1065376327"
+    
+    // MARK: Properties
+    
+    // Collection view
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    // Array of stickers
+    var stickers = [MSSticker]()
     
     // MARK: - Lifecycle
     // View did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load StickerCollectionViewController
-        let _ = loadViewController(StickersViewController)
-    }
-    
-    // View did receive memory warning
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        loadStickers()
     }
     
     // MARK: - Helpers
     
-    // Load a view controller with given identifier
-    func loadViewController(_ viewControllerIdentifier: String) -> Bool {
-        // Remove any existing child controllers.
-        childViewControllers.forEach {
-            $0.willMove(toParentViewController: nil)
-            $0.view.removeFromSuperview()
-            $0.removeFromParentViewController()
+    // Create sticker
+    func createSticker(asset: String, localizedDescription: String) {
+        // Get path for asset
+        guard let stickerPath = Bundle.main.path(forResource: asset, ofType:"png") else {
+            print("couldn't create the sticker for asset ", asset)
+            return
         }
         
-        // Instantiate view controller from storyboard, using its identifier...
-        guard let vc = storyboard?
-            .instantiateViewController(withIdentifier: viewControllerIdentifier) else {return false}
+        // Create url from the path
+        let stickerUrl = URL(fileURLWithPath: stickerPath)
         
-        // ... and then add it to message app
-        vc.addTo(appViewController: self)
-        
-        return true
-
+        // Load asset into sticker and append the array of stickers with the new element
+        let sticker: MSSticker
+        do {
+            try sticker = MSSticker(contentsOfFileURL: stickerUrl, localizedDescription:localizedDescription)
+            stickers.append(sticker)
+        }
+        catch {
+            print(error)
+            return
+        }
     }
-}
-
-// MARK: - UIViewController Extension
-
-// Extension for UIViewController class - adds additional functions to a class
-extension UIViewController {
     
-    // Load any view controller into Messages App
-    func addTo(appViewController host: MSMessagesAppViewController) {
+    // Load all assets and create stickers from them
+    func loadStickers() {
+        createSticker(asset: "heart", localizedDescription: NSLocalizedString("Heart", comment: ""))
+        createSticker(asset: "romb", localizedDescription: NSLocalizedString("Romb", comment: ""))
+        createSticker(asset: "club", localizedDescription: NSLocalizedString("Club", comment: ""))
+        createSticker(asset: "square", localizedDescription: NSLocalizedString("Square", comment: ""))
+        createSticker(asset: "star", localizedDescription: NSLocalizedString("Star", comment: ""))
+        createSticker(asset: "circle", localizedDescription: NSLocalizedString("Circle", comment: ""))
+    }
+    
+    // MARK: - CollectionViewDataSource
+    
+    // Number of items in section
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return stickers.count
+    }
+    
+    // Cell for item at index path
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        // Add child view controller
-        willMove(toParentViewController: host)
-        host.addChildViewController(self)
+        // Load reusable cell using its identifier; the loaded cell should be of the class StickerCell - we also defined this in the storyboard
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! StickerCell
         
-        // Set up the frame of child view controller
-        view.frame = host.view.bounds
-        view.translatesAutoresizingMaskIntoConstraints = false
-        host.view.addSubview(view)
+        // Set up cell with its sticker
+        cell.stickerView.sticker = stickers[indexPath.row]
         
-        // Set up constraints
-        view.leftAnchor.constraint(equalTo: host.view.leftAnchor).isActive = true
-        view.rightAnchor.constraint(equalTo: host.view.rightAnchor).isActive = true
-        view.bottomAnchor.constraint(equalTo: host.view.bottomAnchor).isActive = true
-        
-        // We do not want our view controller to be covered with the contact name, that is why this one is different
-        view.topAnchor.constraint(equalTo: host.topLayoutGuide.bottomAnchor).isActive = true
-        
-        /*!
-         @discussion The NSLayoutAnchor class is a factory class for creating NSLayoutConstraint objects using a fluent API. Use these constraints to programatically define your layout using Auto Layout.
-        */
-        
-        didMove(toParentViewController: host)
-        
+        return cell
+    }
+    
+    // MARK: - Actions
+    @IBAction func downloadButtonTouchUpInside(_ sender: UIButton) {
+        NSLog("%@", "You just tapped on the pink button")
     }
 }
