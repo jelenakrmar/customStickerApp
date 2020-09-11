@@ -8,6 +8,6 @@ This app is a part of the [tutorial on iMessage sticker apps](http://www.slidesh
 
 Screenshots of example projects, and other comercial project implemented with this approach are bellow:
 
-<img src="https://raw.githubusercontent.com/jelenakrmar/customStickerApp/master/Screenshot1.png" />
+<img src="https://raw.githubusercontent.com/jelenakrmar/customStickerApp/master/Screenshot1.png" width="639px" height="357px" />
 
-<img src="https://raw.githubusercontent.com/jelenakrmar/customStickerApp/master/Screenshot2.png" />
+<img src="https://raw.githubusercontent.com/jelenakrmar/customStickerApp/master/Screenshot2.png" width="639px" height="357px" />
