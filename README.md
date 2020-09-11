@@ -1,4 +1,4 @@
-# Stickers app for iMessage with customized layout
+# iMessage sticker pack with fully customized layout.
 
 This is an example of customized sticker pack for iMessage. 
 Sticker browser is implemented as `UICollectionViewController` with a custom layout. 
